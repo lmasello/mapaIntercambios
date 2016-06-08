@@ -1,0 +1,134 @@
+var alumnos = [{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [14.388605, 50.104656]
+  },
+  "properties": {
+    "title": "Leandro Masello",
+    "description": "Ing. Informatica, maselloleandro@gmail.com",
+    "ciudad": "Praga",
+    "universidad": "cvut",
+    "lic-sistemas":false,
+    "ing-informatica":true,
+    "ing-industrial":false,
+    "ing-mecanica":false,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [14.388605, 50.104656]
+  },
+  "properties": {
+    "title": "Gonzalo Otero",
+    "description": "Ing. Industrial, gonzalootero11@gmail.com",
+    "ciudad": "Praga",
+    "universidad": "cvut",
+    "lic-sistemas":false,
+    "ing-informatica":false,
+    "ing-industrial":true,
+    "ing-mecanica":false,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [14.388605, 50.104656]
+  },
+  "properties": {
+    "title": "Agustin Blanco",
+    "description": "Lic. en Sistemas, blancoagustin92@gmail.com",
+    "ciudad": "Praga",
+    "universidad": "cvut",
+    "lic-sistemas":true,
+    "ing-informatica":false,
+    "ing-industrial":false,
+    "ing-mecanica":false,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [2.173923, 41.398425]
+  },
+  "properties": {
+    "title": "xx xx",
+    "description": "Lic. en Sistemas, xx@gmail.com",
+    "ciudad": "Barcelona",
+    "universidad": "universidad de Barcelona",
+    "lic-sistemas":true,
+    "ing-informatica":false,
+    "ing-industrial":false,
+    "ing-mecanica":false,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [2.173923, 41.398425]
+  },
+  "properties": {
+    "title": "aa aa",
+    "description": "Lic. en Sistemas, aa@gmail.com",
+    "ciudad": "Barcelona",
+    "universidad": "universidad de Barcelona",
+    "lic-sistemas":true,
+    "ing-informatica":false,
+    "ing-industrial":false,
+    "ing-mecanica":false,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-74.133710, 5.072144]
+  },
+  "properties": {
+    "title": "abc def",
+    "description": "Ing. Mecanica, abc@gmail.com",
+    "ciudad": "Bogota",
+    "universidad": "Universidad de Bogota",
+    "lic-sistemas":false,
+    "ing-informatica":false,
+    "ing-industrial":false,
+    "ing-mecanica":true,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+},
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [-74.133710, 5.072144]
+  },
+  "properties": {
+    "title": "aaa def",
+    "description": "Ing. Industrial, aaadef@gmail.com",
+    "ciudad": "Bogota",
+    "universidad": "Universidad de Bogota",
+    "lic-sistemas":false,
+    "ing-informatica":false,
+    "ing-industrial":true,
+    "ing-mecanica":false,
+    "marker-color": "#0044FF",
+    "marker-symbol": "college"
+  }
+}
+];
