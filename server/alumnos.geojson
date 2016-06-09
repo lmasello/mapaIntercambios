@@ -1,134 +1,119 @@
 var alumnos = [{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [14.388605, 50.104656]
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [14.392722, 50.103064]
+    },
+    "properties": {
+      "title": "Leandro Masello",
+      "id": 1,
+      "description": "Ing. Informatica, maselloleandro@gmail.com",
+      "ciudad": "Praga",
+      "universidad": "UTCP- PRAGA",
+      "ing-informatica":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
   },
-  "properties": {
-    "title": "Leandro Masello",
-    "description": "Ing. Informatica, maselloleandro@gmail.com",
-    "ciudad": "Praga",
-    "universidad": "cvut",
-    "lic-sistemas":false,
-    "ing-informatica":true,
-    "ing-industrial":false,
-    "ing-mecanica":false,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-},
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [14.388605, 50.104656]
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [14.392722, 50.103064]
+    },
+    "properties": {
+      "title": "Gonzalo Otero",
+      "id": 2,
+      "description": "Ing. Industrial, gonzalootero11@gmail.com",
+      "ciudad": "Praga",
+      "universidad": "UTCP- PRAGA",
+      "ing-industrial":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
   },
-  "properties": {
-    "title": "Gonzalo Otero",
-    "description": "Ing. Industrial, gonzalootero11@gmail.com",
-    "ciudad": "Praga",
-    "universidad": "cvut",
-    "lic-sistemas":false,
-    "ing-informatica":false,
-    "ing-industrial":true,
-    "ing-mecanica":false,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-},
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [14.388605, 50.104656]
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [14.392722, 50.103064]
+    },
+    "properties": {
+      "title": "Agustin Blanco",
+      "id": 3,
+      "description": "Lic. en Sistemas, blancoagustin92@gmail.com",
+      "ciudad": "Praga",
+      "universidad": "UTCP- PRAGA",
+      "lic-sistemas":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
   },
-  "properties": {
-    "title": "Agustin Blanco",
-    "description": "Lic. en Sistemas, blancoagustin92@gmail.com",
-    "ciudad": "Praga",
-    "universidad": "cvut",
-    "lic-sistemas":true,
-    "ing-informatica":false,
-    "ing-industrial":false,
-    "ing-mecanica":false,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-},
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [2.173923, 41.398425]
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.114160, 41.389317]
+    },
+    "properties": {
+      "title": "xx xx",
+      "id": 4,
+      "description": "Ing. Informatica, xx@gmail.com",
+      "ciudad": "Barcelona",
+      "universidad": "UPC-FIB",
+      "ing-informatica":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
   },
-  "properties": {
-    "title": "xx xx",
-    "description": "Lic. en Sistemas, xx@gmail.com",
-    "ciudad": "Barcelona",
-    "universidad": "universidad de Barcelona",
-    "lic-sistemas":true,
-    "ing-informatica":false,
-    "ing-industrial":false,
-    "ing-mecanica":false,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-},
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [2.173923, 41.398425]
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [2.118411, 41.384679]
+    },
+    "properties": {
+      "title": "aa aa",
+      "id": 5,
+      "description": "Ing. Industrial, aa@gmail.com",
+      "ciudad": "Barcelona",
+      "universidad": "UPC-ETSEIB",
+      "ing-industrial":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
   },
-  "properties": {
-    "title": "aa aa",
-    "description": "Lic. en Sistemas, aa@gmail.com",
-    "ciudad": "Barcelona",
-    "universidad": "universidad de Barcelona",
-    "lic-sistemas":true,
-    "ing-informatica":false,
-    "ing-industrial":false,
-    "ing-mecanica":false,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-},
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-74.133710, 5.072144]
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-46.730918, -23.561399]
+    },
+    "properties": {
+      "title": "abc def",
+      "id": 6,
+      "description": "Ing. Mecanica, abc@gmail.com",
+      "ciudad": "San Pablo",
+      "universidad": "USP (SAN PABLO)",
+      "ing-mecanica":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
   },
-  "properties": {
-    "title": "abc def",
-    "description": "Ing. Mecanica, abc@gmail.com",
-    "ciudad": "Bogota",
-    "universidad": "Universidad de Bogota",
-    "lic-sistemas":false,
-    "ing-informatica":false,
-    "ing-industrial":false,
-    "ing-mecanica":true,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-},
-{
-  "type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [-74.133710, 5.072144]
-  },
-  "properties": {
-    "title": "aaa def",
-    "description": "Ing. Industrial, aaadef@gmail.com",
-    "ciudad": "Bogota",
-    "universidad": "Universidad de Bogota",
-    "lic-sistemas":false,
-    "ing-informatica":false,
-    "ing-industrial":true,
-    "ing-mecanica":false,
-    "marker-color": "#0044FF",
-    "marker-symbol": "college"
-  }
-}
-];
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-46.730918, -23.561399]
+    },
+    "properties": {
+      "title": "aaa def",
+      "id": 7,
+      "description": "Ing. Industrial, aaadef@gmail.com",
+      "ciudad": "San Pablo",
+      "universidad": "USP (SAN PABLO)",
+      "ing-industrial":true,
+      "marker-color": "#0044FF",
+      "marker-symbol": "college"
+    }
+  }];

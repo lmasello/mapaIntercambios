@@ -24,8 +24,13 @@ $('.menu-ui a').on('click', function() {
 
     markers.eachLayer(function(layer) {
         clusterGroup.removeLayer(layer);
-        if (filter === 'all' || layer.feature.properties[filter] === true)
+        if (filter === 'all')
           clusterGroup.addLayer(layer);
+
+        else if (filter in layer.feature.properties)
+          if (layer.feature.properties[filter] === true)
+            clusterGroup.addLayer(layer);
     });
+
     mymap.addLayer(clusterGroup);
 });
