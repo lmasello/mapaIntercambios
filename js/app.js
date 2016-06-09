@@ -6,6 +6,16 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?acce
     minZoom: 3
 }).addTo(mymap);
 
+function httpGet(theUrl)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
+}
+var url = "http://127.0.0.1:8080/geojson";
+var alumnos = JSON.parse(httpGet(url));
+
 var markers = L.mapbox.featureLayer()
     .setGeoJSON(alumnos);
 
@@ -24,8 +34,12 @@ $('.menu-ui a').on('click', function() {
 
     markers.eachLayer(function(layer) {
         clusterGroup.removeLayer(layer);
-        if (filter === 'all' || layer.feature.properties[filter] === true)
+        if (filter === 'all')
           clusterGroup.addLayer(layer);
+
+        else if (filter in layer.feature.properties)
+          if (layer.feature.properties[filter] === true)
+            clusterGroup.addLayer(layer);
     });
     mymap.addLayer(clusterGroup);
 });
