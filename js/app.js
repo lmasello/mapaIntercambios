@@ -19,28 +19,59 @@ var alumnos = JSON.parse(httpGet(url));
 var markers = L.mapbox.featureLayer()
     .setGeoJSON(alumnos);
 
-var clusterGroup = new L.MarkerClusterGroup();
+function makeGroup(){
+  var clusterGroup = new L.MarkerClusterGroup();
+  mymap.addLayer(clusterGroup);
+  return clusterGroup;
+};
+
+// create a marker cluster group for each type of country
+var groups = {
+  "czechRep": makeGroup(),
+  "spain": makeGroup(),
+  "france": makeGroup(),
+  "bra": makeGroup(),
+  "it": makeGroup(),
+};
+
+var universityToCountry = {
+  "UTCP- PRAGA": "czechRep",
+  "UPC-ETSEIB": "spain",
+  "UPC-EUETIB": "spain",
+  "UPC-FIB": "spain",
+  "EC PARIS": "france",
+  "INSA LYON": "france",
+  "USP (SAN PABLO)": "bra",
+  "TELECOM BRETAGNE": "france",
+  "U BOLONIA": "it",
+  "UE - GENOVA": "it",
+  "UP MADRID": "spain",
+  "UPV": "spain"
+}
+
 markers.eachLayer(function(layer) {
-    clusterGroup.addLayer(layer);
+  var universidad = layer.feature.properties.universidad;
+  var country = universityToCountry[universidad];
+  groups[country].addLayer(layer);
 });
-mymap.addLayer(clusterGroup);
 
 
 $('.menu-ui a').on('click', function() {
     // For each filter link, get the 'data-filter' attribute value.
     var filter = $(this).data('filter');
     $(this).addClass('active').siblings().removeClass('active');
-
-    mymap.removeLayer(clusterGroup);
+    for (var i=0; i<groups.length; i++)
+      mymap.removeLayer(groups[i]);
 
     markers.eachLayer(function(layer) {
-        clusterGroup.removeLayer(layer);
+        var universidad = layer.feature.properties.universidad;
+        var country = universityToCountry[universidad];
+        groups[country].removeLayer(layer);
         if (filter === 'all')
-          clusterGroup.addLayer(layer);
+          groups[country].addLayer(layer);
 
         else if (filter in layer.feature.properties)
           if (layer.feature.properties[filter] === true)
-            clusterGroup.addLayer(layer);
+            groups[country].addLayer(layer);
     });
-    mymap.addLayer(clusterGroup);
 });
