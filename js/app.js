@@ -25,6 +25,7 @@ markers.eachLayer(function(layer) {
 });
 mymap.addLayer(clusterGroup);
 
+
 $('.menu-ui a').on('click', function() {
     // For each filter link, get the 'data-filter' attribute value.
     var filter = $(this).data('filter');

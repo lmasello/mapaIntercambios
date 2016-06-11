@@ -1,132 +1,22 @@
 var http = require("http");
 
 var storage = {
-  "alumnos" : [{
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [14.392722, 50.103064]
-    },
-    "properties": {
-      "title": "Leandro Masello",
-      "id": 1,
-      "description": "Ing. Informatica, maselloleandro@gmail.com",
-      "ciudad": "Praga",
-      "universidad": "UTCP- PRAGA",
-      "ing-informatica":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [14.392722, 50.103064]
-    },
-    "properties": {
-      "title": "Gonzalo Otero",
-      "id": 2,
-      "description": "Ing. Industrial, gonzalootero11@gmail.com",
-      "ciudad": "Praga",
-      "universidad": "UTCP- PRAGA",
-      "ing-industrial":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [14.392722, 50.103064]
-    },
-    "properties": {
-      "title": "Agustin Blanco",
-      "id": 3,
-      "description": "Lic. en Sistemas, blancoagustin92@gmail.com",
-      "ciudad": "Praga",
-      "universidad": "UTCP- PRAGA",
-      "lic-sistemas":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.114160, 41.389317]
-    },
-    "properties": {
-      "title": "xx xx",
-      "id": 4,
-      "description": "Ing. Informatica, xx@gmail.com",
-      "ciudad": "Barcelona",
-      "universidad": "UPC-FIB",
-      "ing-informatica":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [2.118411, 41.384679]
-    },
-    "properties": {
-      "title": "aa aa",
-      "id": 5,
-      "description": "Ing. Industrial, aa@gmail.com",
-      "ciudad": "Barcelona",
-      "universidad": "UPC-ETSEIB",
-      "ing-industrial":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-46.730918, -23.561399]
-    },
-    "properties": {
-      "title": "abc def",
-      "id": 6,
-      "description": "Ing. Mecanica, abc@gmail.com",
-      "ciudad": "San Pablo",
-      "universidad": "USP (SAN PABLO)",
-      "ing-mecanica":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-46.730918, -23.561399]
-    },
-    "properties": {
-      "title": "aaa def",
-      "id": 7,
-      "description": "Ing. Industrial, aaadef@gmail.com",
-      "ciudad": "San Pablo",
-      "universidad": "USP (SAN PABLO)",
-      "ing-industrial":true,
-      "marker-color": "#0044FF",
-      "marker-symbol": "college"
-    }
-  }],
+  "alumnos" : [],
 
   universityCoordinates :
     [
       {"universidad":"UTCP- PRAGA", "coordinates":[14.392722, 50.103064]},
       {"universidad":"UPC-ETSEIB", "coordinates":[2.118411, 41.384679]},
+      {"universidad":"UPC-EUETIB", "coordinates":[2.149232, 41.388715]},
       {"universidad":"UPC-FIB", "coordinates":[2.114160, 41.389317]},
       {"universidad":"USP (SAN PABLO)", "coordinates": [-46.730918, -23.561399]},
+      {"universidad":"EC PARIS", "coordinates": [2.291261, 48.765412]},
+      {"universidad":"INSA LYON", "coordinates": [4.878407, 45.783239]},
+      {"universidad":"TELECOM BRETAGNE", "coordinates": [-4.570119, 48.358787]},
+      {"universidad":"U BOLONIA", "coordinates": [11.354050, 44.496224]},
+      {"universidad":"UE - GENOVA", "coordinates": [8.930651, 44.414873]},
+      {"universidad":"UP MADRID", "coordinates": [-3.719441, 40.448662]},
+      {"universidad":"UPV", "coordinates": [-0.341697, 39.480927]},
     ],
 
   getStudents : function(){
@@ -156,7 +46,7 @@ var storage = {
     this.alumnos.push(newStudent);
   },
 
-  lastId : 7,
+  lastId : 0,
 
   getId : function(){
     return ++this.lastId;
